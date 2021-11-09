@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bangladesh-monitoring-network/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/bangladesh-monitoring-network/static/js/main.d4e8cd8f.chunk.js",
+    "main.js.map": "/bangladesh-monitoring-network/static/js/main.d4e8cd8f.chunk.js.map",
+    "runtime-main.js": "/bangladesh-monitoring-network/static/js/runtime-main.0b913180.js",
+    "runtime-main.js.map": "/bangladesh-monitoring-network/static/js/runtime-main.0b913180.js.map",
+    "static/css/2.68ba508b.chunk.css": "/bangladesh-monitoring-network/static/css/2.68ba508b.chunk.css",
+    "static/js/2.5cb4b85c.chunk.js": "/bangladesh-monitoring-network/static/js/2.5cb4b85c.chunk.js",
+    "static/js/2.5cb4b85c.chunk.js.map": "/bangladesh-monitoring-network/static/js/2.5cb4b85c.chunk.js.map",
+    "static/js/3.7fc85113.chunk.js": "/bangladesh-monitoring-network/static/js/3.7fc85113.chunk.js",
+    "static/js/3.7fc85113.chunk.js.map": "/bangladesh-monitoring-network/static/js/3.7fc85113.chunk.js.map",
+    "index.html": "/bangladesh-monitoring-network/index.html",
+    "static/css/2.68ba508b.chunk.css.map": "/bangladesh-monitoring-network/static/css/2.68ba508b.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/bangladesh-monitoring-network/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.5cb4b85c.chunk.js.LICENSE.txt": "/bangladesh-monitoring-network/static/js/2.5cb4b85c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b913180.js",
+    "static/css/2.68ba508b.chunk.css",
+    "static/js/2.5cb4b85c.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.d4e8cd8f.chunk.js"
+  ]
+}
