@@ -37,7 +37,11 @@ export default function App() {
           <Marker
           position={[station.geometry.coordinates[1], station.geometry.coordinates[0]]} 
           icon={wlicon}>
-            <Popup>{station.properties.location}</Popup>
+            <Popup>
+              Station Name: {station.properties.location} <br/>
+              Longitude: {station.properties.x} <br/>
+              Latitude: {station.properties.y} <br/>
+            </Popup>
           </Marker>
 
         ))}
