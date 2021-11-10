@@ -10,14 +10,21 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import bwdb from "./data/stations/bwdb.json";
+import biwta from "./data/stations/biwta.json";
 import { icon } from "leaflet";
-import wl_station_marker from "./images/level.svg";
+import marker_level from "./images/level.svg";
+import marker_oceantide from "./images/oceantide.svg";
 
 export default function App() {
   const position = [24, 90];
 
-  const wlicon = icon({
-    iconUrl: wl_station_marker,
+  const icon_level = icon({
+    iconUrl: marker_level,
+    iconSize: [24, 24],
+  });
+
+  const icon_tide = icon({
+    iconUrl: marker_oceantide,
     iconSize: [24, 24],
   });
 
@@ -61,12 +68,33 @@ export default function App() {
                     station.geometry.coordinates[1],
                     station.geometry.coordinates[0],
                   ]}
-                  icon={wlicon}
+                  icon={icon_level}
                 >
                   <Popup>
                     Station Name: {station.properties.location} <br />
                     Longitude: {station.properties.x} <br />
                     Latitude: {station.properties.y} <br />
+                  </Popup>
+                </Marker>
+              ))}
+            </LayerGroup>
+          </LayersControl.Overlay>
+
+          <LayersControl.Overlay checked name="BIWTA">
+            <LayerGroup>
+              {biwta.features.map((station) => (
+                <Marker
+                  position={[
+                    station.geometry.coordinates[1],
+                    station.geometry.coordinates[0],
+                  ]}
+                  icon={icon_tide}
+                >
+                  <Popup>
+                    Station Name: {station.properties.StationName} <br />
+                    Longitude: {station.properties.Longitude} <br />
+                    Latitude: {station.properties.Latitude} <br />
+                    Authority: {station.properties.Authority} <br />
                   </Popup>
                 </Marker>
               ))}
@@ -80,7 +108,6 @@ export default function App() {
           imperial={true}
           maxWidth={200}
         ></ScaleControl>
-        
       </MapContainer>
     </div>
   );
