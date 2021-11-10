@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/bangladesh-monitoring-network/static/css/main.4a4137e4.chunk.css",
-    "main.js": "/bangladesh-monitoring-network/static/js/main.be600b43.chunk.js",
-    "main.js.map": "/bangladesh-monitoring-network/static/js/main.be600b43.chunk.js.map",
-    "runtime-main.js": "/bangladesh-monitoring-network/static/js/runtime-main.25d625a8.js",
-    "runtime-main.js.map": "/bangladesh-monitoring-network/static/js/runtime-main.25d625a8.js.map",
+    "main.js": "/bangladesh-monitoring-network/static/js/main.a93ef0cc.chunk.js",
+    "main.js.map": "/bangladesh-monitoring-network/static/js/main.a93ef0cc.chunk.js.map",
+    "runtime-main.js": "/bangladesh-monitoring-network/static/js/runtime-main.69c0971b.js",
+    "runtime-main.js.map": "/bangladesh-monitoring-network/static/js/runtime-main.69c0971b.js.map",
     "static/css/2.68ba508b.chunk.css": "/bangladesh-monitoring-network/static/css/2.68ba508b.chunk.css",
-    "static/js/2.1ec6af4d.chunk.js": "/bangladesh-monitoring-network/static/js/2.1ec6af4d.chunk.js",
-    "static/js/2.1ec6af4d.chunk.js.map": "/bangladesh-monitoring-network/static/js/2.1ec6af4d.chunk.js.map",
-    "static/js/3.e365387c.chunk.js": "/bangladesh-monitoring-network/static/js/3.e365387c.chunk.js",
-    "static/js/3.e365387c.chunk.js.map": "/bangladesh-monitoring-network/static/js/3.e365387c.chunk.js.map",
+    "static/js/2.e4a6f7b8.chunk.js": "/bangladesh-monitoring-network/static/js/2.e4a6f7b8.chunk.js",
+    "static/js/2.e4a6f7b8.chunk.js.map": "/bangladesh-monitoring-network/static/js/2.e4a6f7b8.chunk.js.map",
+    "static/js/3.34815bbd.chunk.js": "/bangladesh-monitoring-network/static/js/3.34815bbd.chunk.js",
+    "static/js/3.34815bbd.chunk.js.map": "/bangladesh-monitoring-network/static/js/3.34815bbd.chunk.js.map",
     "index.html": "/bangladesh-monitoring-network/index.html",
     "static/css/2.68ba508b.chunk.css.map": "/bangladesh-monitoring-network/static/css/2.68ba508b.chunk.css.map",
     "static/css/main.4a4137e4.chunk.css.map": "/bangladesh-monitoring-network/static/css/main.4a4137e4.chunk.css.map",
-    "static/js/2.1ec6af4d.chunk.js.LICENSE.txt": "/bangladesh-monitoring-network/static/js/2.1ec6af4d.chunk.js.LICENSE.txt",
+    "static/js/2.e4a6f7b8.chunk.js.LICENSE.txt": "/bangladesh-monitoring-network/static/js/2.e4a6f7b8.chunk.js.LICENSE.txt",
     "static/media/level.610b15a1.svg": "/bangladesh-monitoring-network/static/media/level.610b15a1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.25d625a8.js",
+    "static/js/runtime-main.69c0971b.js",
     "static/css/2.68ba508b.chunk.css",
-    "static/js/2.1ec6af4d.chunk.js",
+    "static/js/2.e4a6f7b8.chunk.js",
     "static/css/main.4a4137e4.chunk.css",
-    "static/js/main.be600b43.chunk.js"
+    "static/js/main.a93ef0cc.chunk.js"
   ]
 }
