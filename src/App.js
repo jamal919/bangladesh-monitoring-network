@@ -3,6 +3,7 @@ import {
   MapContainer,
   TileLayer,
   LayersControl,
+  ScaleControl,
   Marker,
   LayerGroup,
   Popup,
@@ -27,12 +28,11 @@ export default function App() {
         zoom={7}
         scrollWheelZoom={true}
         minZoom={5}
-        maxZoom={13}
+        maxZoom={16}
         style={{ width: "100vw", height: "100vh" }}
       >
         <LayersControl position="topright">
-
-        <LayersControl.BaseLayer checked name="OSM - Standard">
+          <LayersControl.BaseLayer checked name="OSM - Standard">
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -46,7 +46,7 @@ export default function App() {
             />
           </LayersControl.BaseLayer>
 
-        <LayersControl.BaseLayer name="ESRI Satellite">
+          <LayersControl.BaseLayer name="ESRI Satellite">
             <TileLayer
               attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
               url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
@@ -73,6 +73,14 @@ export default function App() {
             </LayerGroup>
           </LayersControl.Overlay>
         </LayersControl>
+
+        <ScaleControl
+          position="bottomright"
+          metric={true}
+          imperial={true}
+          maxWidth={200}
+        ></ScaleControl>
+        
       </MapContainer>
     </div>
   );
