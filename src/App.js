@@ -10,7 +10,7 @@ import {
 import "leaflet/dist/leaflet.css";
 import bwdb from "./data/stations/bwdb.json";
 import { icon } from "leaflet";
-import wl_station_marker from "./images/waterlevel.jpeg";
+import wl_station_marker from "./images/level.svg";
 
 export default function App() {
   const position = [24, 90];
@@ -32,14 +32,7 @@ export default function App() {
       >
         <LayersControl position="topright">
 
-        <LayersControl.BaseLayer checked name="ESRI Satellite">
-            <TileLayer
-              attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
-              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-            />
-          </LayersControl.BaseLayer>
-
-          <LayersControl.BaseLayer checked name="OSM - Standard">
+        <LayersControl.BaseLayer checked name="OSM - Standard">
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -50,6 +43,13 @@ export default function App() {
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
+            />
+          </LayersControl.BaseLayer>
+
+        <LayersControl.BaseLayer name="ESRI Satellite">
+            <TileLayer
+              attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
             />
           </LayersControl.BaseLayer>
 
