@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bangladesh-monitoring-network/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/bangladesh-monitoring-network/static/js/main.5a6ad980.chunk.js",
-    "main.js.map": "/bangladesh-monitoring-network/static/js/main.5a6ad980.chunk.js.map",
+    "main.js": "/bangladesh-monitoring-network/static/js/main.b7195dba.chunk.js",
+    "main.js.map": "/bangladesh-monitoring-network/static/js/main.b7195dba.chunk.js.map",
     "runtime-main.js": "/bangladesh-monitoring-network/static/js/runtime-main.25d625a8.js",
     "runtime-main.js.map": "/bangladesh-monitoring-network/static/js/runtime-main.25d625a8.js.map",
     "static/css/2.68ba508b.chunk.css": "/bangladesh-monitoring-network/static/css/2.68ba508b.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.68ba508b.chunk.css",
     "static/js/2.1ec6af4d.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.5a6ad980.chunk.js"
+    "static/js/main.b7195dba.chunk.js"
   ]
 }
