@@ -12,11 +12,20 @@ import "leaflet/dist/leaflet.css";
 import bwdb from "./data/stations/bwdb.json";
 import biwta from "./data/stations/biwta.json";
 import { icon } from "leaflet";
+import DyGraph from "./components/Graph.js";
 import marker_level from "./images/level.svg";
 import marker_oceantide from "./images/oceantide.svg";
 
+// Check if an url exists
+async function exists(url) {
+  const result = await fetch(url, { method: 'HEAD' });
+  return result.ok;
+}
+
+// The main application
 export default function App() {
   const position = [24, 90];
+  const databaseURL = "https://raw.githubusercontent.com/jamal919/bangladesh-monitoring-network/master/database/";
 
   const icon_level = icon({
     iconUrl: marker_level,
@@ -90,11 +99,15 @@ export default function App() {
                   ]}
                   icon={icon_tide}
                 >
-                  <Popup>
+                  <Popup maxWidth={700}>
                     Station Name: {station.properties.StationName} <br />
                     Longitude: {station.properties.Longitude} <br />
                     Latitude: {station.properties.Latitude} <br />
                     Authority: {station.properties.Authority} <br />
+                    <DyGraph
+                      url={databaseURL + "biwta/" + station.properties.StationName + ".csv"}
+                      title={station.properties.StationName}
+                    ></DyGraph>
                   </Popup>
                 </Marker>
               ))}
